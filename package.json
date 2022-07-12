@@ -4,7 +4,8 @@
   "description": "Repo Tracker created using React (Coding Challenge for Lap 3 at futureproof)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-cli serve --mode development --config ./config/webpack.config.dev.js",
+    "build": "webpack --config ./config/webpack.config.prod.js"
   },
   "repository": {
     "type": "git",

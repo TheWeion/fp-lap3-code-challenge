@@ -40,12 +40,55 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 <hr>
 
-## Usage
+## Installation and Usage
 
-* 
+* Run `npm install` to install packages.
+
+### Usage
+
+* Run `npm build` to build the app for a production environment.
+* Run `npm dev` to start the app in a development environment.
+
 
 ## Changelog
 
+### .babelrc
+
+- [x] Initial Commit.
+
+### .gitignore
+
+- [x] Initial Commit.
+
+### config/webpack.config.dev.js
+
+- [x] Initial Commit.
+
+### config/webpack.config.js
+
+- [x] Initial Commit.
+
+### config/webpack.config.prod.js
+
+- [x] Initial Commit.
+
+### package.json
+
+- [x] Added scripts.
+
+- [x] Initial Commit.
+
+### package-lock.json
+
+- [x] Initial Commit.
+
+### public/index.html
+
+- [x] Initial Commit.
+
+### src/pages/IndexPage/index.jsx
+
+- [x] Initial Commit.
 
 
 ## TODO
