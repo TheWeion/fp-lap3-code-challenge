@@ -1,0 +1,47 @@
+{
+  "name": "fp-lap3-code-challenge",
+  "version": "1.0.0",
+  "description": "Repo Tracker created using React (Coding Challenge for Lap 3 at futureproof)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theweion/fp-lap3-code-challenge.git"
+  },
+  "keywords": [],
+  "author": "Weion, SuperBrava",
+  "license": "GNU GPLv3",
+  "bugs": {
+    "url": "https://github.com/theweion/fp-lap3-code-challenge/issues"
+  },
+  "homepage": "https://github.com/theweion/fp-lap3-code-challenge#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "react": "^18.2.0",
+    "react-redux": "^8.0.2",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.1.1",
+    "@testing-library/user-event": "^14.1.1",
+    "babel-jest": "^28.0.3",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "jest": "^28.0.3",
+    "jest-environment-jsdom": "^28.0.2",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.31.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
