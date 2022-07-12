@@ -1,23 +1,24 @@
-import React, {useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { GitHubCard } from '../../components/GitHubCard';
 
 const IndexPage = () => {
 	  const [repos, setRepos] = useState([]);
-	  const [loading, setLoading] = useState(false);
-	  const USERNAME = '';
+	  const [loading, setLoading] = useState(true);
+	  const USERNAME = 'TheWeion';
 
 	useEffect(() => {
-		setLoading(true);
-		axios.get(`https://api.github.com/users/${USERNAME}/repos`)
-			.then(res => {
-				setRepos(res.data);
+		async function fetchData() {
+			try {
+				setLoading(true);
+				const { data } = await axios.get(`https://api.github.com/users/${USERNAME}/repos`);
+				setRepos(data);
 				setLoading(false);
-			}).catch(err => {
-				console.log(err);
-				setLoading(false);
+			} catch (error) {
+				console.log(error);
 			}
-		);
+		}
+		fetchData();
 	}, []);
 
 	  return (

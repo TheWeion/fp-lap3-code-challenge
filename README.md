@@ -52,6 +52,22 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 ## Changelog
 
+### src/App.jsx
+
+- [x] Refactored Routes for development.
+
+### src/components/GitHubCard/index.jsx
+
+- [x] Implementing the GitHub API to retrieve user's repos and pull relevant data.
+
+### .babelrc
+
+- [x] Initial Commit.
+
+### .babelrc
+
+- [x] Initial Commit.
+
 ### .babelrc
 
 - [x] Initial Commit.
@@ -91,6 +107,8 @@ You will be working in pairs for this challenge and teaming up with another pair
 - [x] Initial Commit.
 
 ### src/pages/IndexPage/index.jsx
+
+- [x] Refactored GitHub API function to explicitly make it Asynchronous for sanity checks.
 
 - [x] Corrected constant declaration.
 
