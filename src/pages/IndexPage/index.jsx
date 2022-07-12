@@ -9,7 +9,7 @@ const IndexPage = () => {
 
 	useEffect(() => {
 		setLoading(true);
-		await axios.get(`https://api.github.com/users/${username}/repos`)
+		axios.get(`https://api.github.com/users/${USERNAME}/repos`)
 			.then(res => {
 				setRepos(res.data);
 				setLoading(false);

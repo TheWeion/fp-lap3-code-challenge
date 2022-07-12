@@ -66,6 +66,8 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 ### config/webpack.config.js
 
+- [x] Corrected paths and extension loaders.
+
 - [x] Initial Commit.
 
 ### config/webpack.config.prod.js
@@ -73,6 +75,8 @@ You will be working in pairs for this challenge and teaming up with another pair
 - [x] Initial Commit.
 
 ### package.json
+
+- [x] Added `react-dom` and `react-router-dom` to `dependencies`.
 
 - [x] Added scripts.
 
@@ -87,6 +91,8 @@ You will be working in pairs for this challenge and teaming up with another pair
 - [x] Initial Commit.
 
 ### src/pages/IndexPage/index.jsx
+
+- [x] Corrected constant declaration.
 
 - [x] Initial Commit.
 
