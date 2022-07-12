@@ -2,7 +2,7 @@ const PATH = require('path');
 const HTMLWEBPACKPLUGIN = require('html-webpack-plugin');
 
 const CONFIG = {
-	entry: PATH.resolve(__dirname, 'src/index.js'),
+	entry: PATH.resolve(__dirname, '../src/index.js'),
 	output: {
 		path: PATH.resolve(__dirname, 'dist'),
 		filename: 'bundle.js',
@@ -12,6 +12,11 @@ const CONFIG = {
 	plugins: [ new HTMLWEBPACKPLUGIN({ template: PATH.resolve(__dirname, 'src/index.html') }) ],
 	module: {
 		rules: [
+			{
+				test: /\.js$/,
+				exclude: /node_modules/,
+				loader: 'babel-loader'
+			},
 			{
 				test: /\.jsx$/,
 				exclude: /node_modules/,

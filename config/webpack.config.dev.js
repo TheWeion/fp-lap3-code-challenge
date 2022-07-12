@@ -8,7 +8,6 @@ CONFIG.devServer = {
 	hot: true,
 	open: true,
 	watchContentBase: true,
-	mode: 'development'
 };
 
 CONFIG.devtool = 'inline-source-map';
