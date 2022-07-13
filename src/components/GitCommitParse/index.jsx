@@ -4,13 +4,15 @@ import axios from "axios";
 const GitCommitParse = ({ url }) => {
 	const [commits, setCommits] = useState();
 
-	useEffect(async () => {
-		const OPTS = {
-			headers: { Accept: "application/vnd.github.v3+json" }
+	useEffect(() => {
+		const parseRepo = async () => {
+			const OPTS = {
+				headers: { Accept: "application/vnd.github.v3+json" }
+			}
+			const { data } = await axios.get(url.replace(/{\/sha}$/, ''), OPTS);
+			setCommits(data.length);
 		}
-		const { data } = await axios.get(url.replace(/{\/sha}$/, ''), OPTS);
-
-		setCommits(data);
+		parseRepo();
 	}, [url]);
 
 	return(

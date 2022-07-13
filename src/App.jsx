@@ -27,7 +27,7 @@ const App = () => {
 				<input id="txtUsername" name='txtUsername' type="text" value={formData} onChange={handleChange} />
 				<button type="submit">Search</button>
 			</form>
-			{ loading ? <em>Loading...</em> : <GitHubCard username={username} />}
+			{ loading ? <GitHubCard username={username} /> : null }
 			<Footer />
 		</>
 	)
