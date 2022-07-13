@@ -6,7 +6,7 @@ const ROOT_DIRECTORY = PATH.join(__dirname, '../'); // the root of your project
 const PUBLIC_DIRECTORY = PATH.join(ROOT_DIRECTORY, 'public'); // the root of the frontend, i.e. html file
 
 const CONFIG = {
-  entry: [PATH.resolve(__dirname, '../src/index.js')], // the main JavaScript file of the project
+  entry: [PATH.resolve(__dirname, '../src/index.jsx')], // the main JavaScript file of the project
   output: {
     // instructions for compiling the code
     path: PATH.resolve(__dirname, '../dist'), // the file where the compiled code should go

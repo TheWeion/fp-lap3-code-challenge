@@ -22,7 +22,8 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 ## Timeline
 - Tuesday PM & Wednesday AM: Work on challenge in pairs
-#### Wednesday
+
+### Wednesday
 - 1pm: It's lunchtime! All work to have been pushed to a GitHub repo with review requested from another pair.
 - 2pm: Review the request sent to you by the other pair
 - 3pm: Meet with the other pair to discuss the comments that have been made.
@@ -103,14 +104,6 @@ You will be working in pairs for this challenge and teaming up with another pair
 - [x] Initial Commit.
 
 ### public/index.html
-
-- [x] Initial Commit.
-
-### src/pages/IndexPage/index.jsx
-
-- [x] Refactored GitHub API function to explicitly make it Asynchronous for sanity checks.
-
-- [x] Corrected constant declaration.
 
 - [x] Initial Commit.
 
