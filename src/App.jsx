@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { Header, Footer } from './layouts';
 import { GitHubCard } from "./components/";
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
 
 import './App.css';
 
@@ -21,14 +24,18 @@ const App = () => {
 
 	return (
 		<>
+		<Container className="container-fluid">
 			<Header />
-			<form onSubmit={handleSubmit} id="search-form">
-				<label htmlFor="txtUsername">Username</label>
-				<input id="txtUsername" name='txtUsername' type="text" value={formData} onChange={handleChange} />
-				<button type="submit">Search</button>
-			</form>
+			<Form>
+				<Form.Group className="mb-3" id="search-form">
+					<Form.Label>Enter GitHub username</Form.Label>
+					<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
+				</Form.Group>
+				<Button variant="primary" type="submit" onClick={handleSubmit}>Submit</Button>
+			</Form>
 			{ loading ? <GitHubCard username={username} /> : null }
 			<Footer />
+		</Container>
 		</>
 	)
 };

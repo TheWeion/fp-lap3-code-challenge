@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { GitHubRepo } from '..';
+import './style.css';
 
 const GitHubCard = ({ username }) => {
 	const [repos, setRepos] = useState([]);
