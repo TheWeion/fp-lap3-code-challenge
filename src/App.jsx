@@ -28,10 +28,10 @@ const App = () => {
 			<Header />
 			<Form>
 				<Form.Group className="mb-3" id="search-form">
-					<Form.Label>Enter GitHub username</Form.Label>
+					<Form.Label></Form.Label>
 					<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
 				</Form.Group>
-				<Button variant="primary" type="submit" onClick={handleSubmit}>Submit</Button>
+				<Button variant="dark" type="submit" onClick={handleSubmit}>Submit</Button>
 			</Form>
 			{ loading ? <GitHubCard username={username} /> : null }
 			<Footer />

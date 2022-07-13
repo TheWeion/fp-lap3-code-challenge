@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+
+.github-card {
+    font-family: 'VT323', sans-serif;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
+.github-card h1 {
+    border-top: solid 5px rgb(216, 216, 216);
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+    padding: 0 0 0 15px;
+   
+}
+
+.repo-data-container {
+    border-bottom: solid 5px rgb(216, 216, 216);
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 45px;
+    border-radius: 0 0 10px 10px ;
+}

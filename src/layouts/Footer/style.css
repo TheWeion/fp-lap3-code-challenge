@@ -1,0 +1,9 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+footer p{
+    font-family: 'VT323', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 15px 0 0 0;
+}
