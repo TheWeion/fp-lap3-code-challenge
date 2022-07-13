@@ -53,6 +53,14 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 ## Changelog
 
+### src/layouts/Header
+
+- [x] Added Header layout.
+
+### src/layouts/Footer
+
+- [x] Added Footer layout.
+
 ### src/App.jsx
 
 - [x] Refactored Routes for development.

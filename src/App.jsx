@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// insert header/footer inport once created
+import { Header, Footer } from './layouts';
 import { GitHubCard } from "./components/";
 
 import './App.css';
@@ -21,12 +21,14 @@ const App = () => {
 
 	return (
 		<>
+			<Header />
 			<form onSubmit={handleSubmit} id="search-form">
 				<label htmlFor="txtUsername">Username</label>
 				<input id="txtUsername" name='txtUsername' type="text" value={formData} onChange={handleChange} />
 				<button type="submit">Search</button>
 			</form>
 			{ loading ? <em>Loading...</em> : <GitHubCard username={username} />}
+			<Footer />
 		</>
 	)
 };
