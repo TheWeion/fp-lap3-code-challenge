@@ -43,7 +43,6 @@ const GitHubRepo = ({ data }) => {
 					{watchers}
 					<span className="tooltip-text">Watchers</span>
 				</li>
-				<li>{language}</li>
 			</ul>
 		</div>
 	)
