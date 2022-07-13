@@ -4,7 +4,7 @@ import './style.css';
 const Footer = () => {
 	return (
 		<footer>
-			<p>Made by Stuart and Terry</p>
+			<p>Created by Stuart and Terry</p>
 		</footer>
 	)
 };

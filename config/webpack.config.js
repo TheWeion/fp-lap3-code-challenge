@@ -42,7 +42,7 @@ const CONFIG = {
       }, // transpile css files
       {
         test: /\.(png|svg|jpg|gif|pdf)$/,
-        use: ['file-loader'],
+        use: ['file-loader', 'url-loader']
       }, // transpile image files
     ],
   },
