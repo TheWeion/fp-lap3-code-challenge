@@ -20,6 +20,9 @@ const App = () => {
 		e.preventDefault();
 		setUsername(formData);
 		setLoading(true);
+		setInterval(() => {
+			setLoading(false);
+		}, 5000);
 	};
 
 	return (
@@ -29,11 +32,23 @@ const App = () => {
 			<Form>
 				<Form.Group className="mb-3" id="search-form">
 					<Form.Label>Enter GitHub username</Form.Label>
-					<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
+					<div class="input-group mb-2">
+        				<div class="input-group-prepend">
+          					<div class="input-group-text">@</div>
+        				</div>
+						<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
+      				</div>
 				</Form.Group>
-				<Button variant="primary" type="submit" onClick={handleSubmit}>Submit</Button>
+				<Button 
+					variant="primary" 
+					type="submit" 
+					disabled={loading}
+					onClick={!loading ? handleSubmit : null}
+				>
+					{loading ? 'Loading...' : 'Search'}
+				</Button>
 			</Form>
-			{ loading ? <GitHubCard username={username} /> : null }
+			{ !loading ? <GitHubCard username={username} /> : null}
 			<Footer />
 		</Container>
 		</>
