@@ -27,30 +27,38 @@ const App = () => {
 
 	return (
 		<>
-		<Container className="container-fluid">
-			<Header />
-			<Form>
-				<Form.Group className="mb-3" id="search-form">
-					<Form.Label>Enter GitHub username</Form.Label>
-					<div class="input-group mb-2">
-        				<div class="input-group-prepend">
-          					<div class="input-group-text">@</div>
-        				</div>
-						<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
-      				</div>
-				</Form.Group>
-				<Button 
-					variant="primary" 
-					type="submit" 
-					disabled={loading}
-					onClick={!loading ? handleSubmit : null}
-				>
-					{loading ? 'Loading...' : 'Search'}
-				</Button>
-			</Form>
-			{ !loading ? <GitHubCard username={username} /> : null}
-			<Footer />
-		</Container>
+			<div class='background' style ={ { backgroundImage: "url('./assets/background.jpg')",
+								  backgroundPosition: 'center',
+								  backgroundSize: 'cover',
+								  backgroundRepeat: 'no-repeat',
+								  width: '100vw',
+								  height: '100vh'
+								  } }>
+			<Container className="container-fluid">
+				<Header />
+				<Form>
+					<Form.Group className="mb-3" id="search-form">
+						<Form.Label>Enter GitHub username</Form.Label>
+						<div class="input-group mb-2">
+							<div class="input-group-prepend">
+								<div class="input-group-text">@</div>
+							</div>
+							<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
+						</div>
+					</Form.Group>
+					<Button 
+						variant="primary" 
+						type="submit" 
+						disabled={loading}
+						onClick={!loading ? handleSubmit : null}
+					>
+						{loading ? 'Loading...' : 'Search'}
+					</Button>
+				</Form>
+				{ !loading ? <GitHubCard username={username} /> : null}
+				<Footer />
+			</Container>
+		</div>
 		</>
 	)
 };
