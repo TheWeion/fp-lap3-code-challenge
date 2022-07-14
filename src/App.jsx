@@ -4,6 +4,8 @@ import { GitHubCard } from "./components/";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub }  from '@fortawesome/free-brands-svg-icons';
 
 import './App.css';
 
@@ -41,9 +43,9 @@ const App = () => {
 				<Form>
 					<Form.Group className="mb-3" id="search-form">
 						<Form.Label>Enter GitHub username</Form.Label>
-						<div class="input-group mb-2">
+						<div class="input-group">
 							<div class="input-group-prepend">
-								<div class="input-group-text">@</div>
+								<FontAwesomeIcon className="input-group-text" icon={faGithub} />
 							</div>
 							<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
 						</div>
