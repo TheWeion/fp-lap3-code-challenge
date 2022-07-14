@@ -28,12 +28,14 @@ const App = () => {
 	return (
 		<>
 			<div class='background' style ={ { backgroundImage: "url('./assets/background.jpg')",
-								  backgroundPosition: 'center',
+								  backgroundPosition: 'fixed',
+								  backgroundAttachment: 'fixed',
 								  backgroundSize: 'cover',
 								  backgroundRepeat: 'no-repeat',
 								  width: '100vw',
 								  height: '100vh'
 								  } }>
+									
 			<Container className="container-fluid">
 				<Header />
 				<Form>
@@ -58,7 +60,8 @@ const App = () => {
 				{ !loading ? <GitHubCard username={username} /> : null}
 				<Footer />
 			</Container>
-		</div>
+			</div>
+		
 		</>
 	)
 };
