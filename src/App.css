@@ -1,8 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+
+
 #root{
-    background: url('./assets/background.jpg') no-repeat fixed center;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.background{
     min-width: 100vw;
     min-height: 100vh;
 }
