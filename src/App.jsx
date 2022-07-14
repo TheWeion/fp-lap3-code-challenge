@@ -32,9 +32,9 @@ const App = () => {
 			<Form>
 				<Form.Group className="mb-3" id="search-form">
 					<Form.Label>Enter GitHub username</Form.Label>
-					<div class="input-group mb-2">
-        				<div class="input-group-prepend">
-          					<div class="input-group-text">@</div>
+					<div className="input-group mb-2">
+        				<div className="input-group-prepend">
+          					<div className="input-group-text">@</div>
         				</div>
 						<Form.Control type="text" placeholder="Enter GitHub username" value={formData} onChange={handleChange} />
       				</div>

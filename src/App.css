@@ -2,15 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 #root{
-    background: url('./assets/background.jpg') no-repeat fixed center;
+    /* background: url('./assets/background.jpg') no-repeat fixed center; */
     min-width: 100vw;
     min-height: 100vh;
 }
 
 
 .form-control{
-    font-family: 'VT323', sans-serif;
-    font-size: 1.3rem;
+
+    font-family: 'VT323', monospace;
+    font-size: 1.5rem;
 }
 
 .btn {

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Accordion from 'react-bootstrap/Accordion';
 import axios from 'axios';
 import { GitHubRepo } from '..';
 import './style.css';
@@ -26,9 +27,9 @@ const GitHubCard = ({ username }) => {
 
     return (
 		<>
-			<div className="github-card">
+			<Accordion.Item className="repo-list-container p-5" eventKey="0">
 				{ renderRepos() }
-			</div>
+			</Accordion.Item>
     	</>
 	)
 }
