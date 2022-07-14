@@ -1,0 +1,20 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+#root{
+    /* background: url('./assets/background.jpg') no-repeat fixed center; */
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.btn {
+    font-family: 'VT323', sans-serif;
+    font-size: 1.3rem;
+    display: flex;
+    align-self: center;
+    margin: auto;
+}
+
+.input-group-text {
+    font-size: 2rem;
+}

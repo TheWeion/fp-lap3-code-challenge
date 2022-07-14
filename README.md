@@ -22,7 +22,8 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 ## Timeline
 - Tuesday PM & Wednesday AM: Work on challenge in pairs
-#### Wednesday
+
+### Wednesday
 - 1pm: It's lunchtime! All work to have been pushed to a GitHub repo with review requested from another pair.
 - 2pm: Review the request sent to you by the other pair
 - 3pm: Meet with the other pair to discuss the comments that have been made.
@@ -40,12 +41,79 @@ You will be working in pairs for this challenge and teaming up with another pair
 
 <hr>
 
-## Usage
+## Installation and Usage
 
-* 
+* Run `npm install` to install packages.
+
+### Usage
+
+* Run `npm build` to build the app for a production environment.
+* Run `npm dev` to start the app in a development environment.
+
 
 ## Changelog
 
+### src/layouts/Header
+
+- [x] Added Header layout.
+
+### src/layouts/Footer
+
+- [x] Added Footer layout.
+
+### src/App.jsx
+
+- [x] Refactored Routes for development.
+
+### src/components/GitHubCard/index.jsx
+
+- [x] Implementing the GitHub API to retrieve user's repos and pull relevant data.
+
+### .babelrc
+
+- [x] Initial Commit.
+
+### .babelrc
+
+- [x] Initial Commit.
+
+### .babelrc
+
+- [x] Initial Commit.
+
+### .gitignore
+
+- [x] Initial Commit.
+
+### config/webpack.config.dev.js
+
+- [x] Initial Commit.
+
+### config/webpack.config.js
+
+- [x] Corrected paths and extension loaders.
+
+- [x] Initial Commit.
+
+### config/webpack.config.prod.js
+
+- [x] Initial Commit.
+
+### package.json
+
+- [x] Added `react-dom` and `react-router-dom` to `dependencies`.
+
+- [x] Added scripts.
+
+- [x] Initial Commit.
+
+### package-lock.json
+
+- [x] Initial Commit.
+
+### public/index.html
+
+- [x] Initial Commit.
 
 
 ## TODO

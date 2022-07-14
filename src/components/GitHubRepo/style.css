@@ -1,0 +1,30 @@
+.repo-list-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.tool-tip {
+	box-sizing: border-box;
+	margin-bottom: 0;
+	margin-right: 0;
+	border-right-width: 0;
+}
+
+.accordion {
+	background-color: whitesmoke;
+	border: 1px solid #ccc;
+
+}
+
+.repo-list-container {
+	border-radius: 4px;
+}
+
+.tool-tip svg {
+	padding-right: 10px;
+}
+
+.tool-tip span {
+	padding-left: 10px;
+}
